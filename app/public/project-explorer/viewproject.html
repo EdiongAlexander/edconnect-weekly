@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Project-Index</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .card{
+                padding: 10px;
+            }
+
+            .container{
+                margin-bottom: 30px;
+                background-color: rgb(241, 239, 239);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Project Explorer</h1>
+            <form action="" class="form-inline" name="searchForm">
+                <input type="search" placeholder="Search Projects" class="form-control">
+                <input type="submit" value="Search" class="btn btn-outline-light">
+            </form>
+            <nav class="navbar">
+            <a href="createproject.html" class="header-links">Submit</a>
+        <div class="right">
+            <a href="register.html" class="header-links">Sign up</a>
+            <a href="login.html"  class="header-links">Login</a>
+        </div>
+        </nav>
+        </header>
+       <main>
+        <h3>Project 1</h3>
+            <section class="container p-3">
+                <div class="row">
+                    <div class="col">Created By</div>
+                    <div class="col">Date Created</div>
+                    <div class="col">last Updated</div>
+                   <div class="col">
+                    <button class="btn btn-primary d-flex-justify-content-end"><a href="editproject.html"  style="color: white;">Edit Project</a></button>
+                    </div>
+                </div>
+                <div class="row" style="font-weight: bold;">
+                    <div class="col">Ade Chris</div>
+                    <div class="col">2020-08-30</div>
+                    <div class="col">2020-08-30</div>
+                    <div class="col"></div>
+                    </div> 
+            </section>
+            <section>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col"><h5><strong>Project Abstract</strong></h5>
+                    <hr>
+                </div>
+                    <div class="col"><h5><strong>Project Details</strong></h5>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repudiandae blanditiis repellat consequatur, cupiditate a nisi laborum provident facere numquam odit esse reprehenderit quidem dolorem quaerat vero, dicta earum accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores non ea a nihil. Blanditiis temporibus deserunt eveniet aliquid explicabo neque suscipit, maiores doloribus accusamus ipsum voluptatum nihil soluta reprehenderit laudantium!</p>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="background-color: rgb(226, 224, 224);">
+                             <h5><strong>Author(s)</strong></h5></div>
+                        <div class="card"> Ade Chris</div>
+                        <div class="card tags"  style="background-color: rgb(226, 224, 224);">#web</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <form action="">
+                        <div class="form-group">
+                        <label for="comments"><h5><strong>Comments</strong></h5></label>
+                            <textarea name="comments" id="comments" cols="30" rows="4" placeholder="Enter a comment" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit" class="btn btn-primary">
+                        </div>
+                        </form>
+                        <hr>
+                        <p style="text-align: center;">No comments added yet</p>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="background-color: rgb(223, 221, 221);">
+                            <h6 class="class-header"><strong>Project Files</strong> </h6>
+                        </div>
+                        <div class="card" style="text-align: center;">
+                            <p>No file uploaded yet</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </main>
+        <footer>
+            <p>Project Explorer 2020 - EdConnect </p>
+        </footer>
+    </body>
+</html>

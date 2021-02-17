@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Project-Index</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+ .jumbotron{
+    background-color: rgb(207, 204, 204);
+}
+
+.project-list1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1{
+    flex-basis: 23%;
+    padding: 5px;
+}
+
+.card-title{
+    color: #007bff;
+    margin-left: 7px;
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Project Explorer</h1>
+            <form action="" class="form-inline" name="searchForm">
+                <input type="search" placeholder="Search Projects" class="form-control">
+                <input type="submit" value="Search" class="btn btn-outline-light">
+            </form>
+            <nav class="navbar">
+                <div>
+            <a href="createproject.html" class="header-links">Submit</a>
+                </div>
+            <div class="right">
+            <a href="register.html" class="header-links">Sign up</a>
+            <a href="login.html"  class="header-links">Login</a>
+        </div>
+        </nav>
+        </header>
+        <main>
+            <div class="jumbotron">
+                <h1>Welcome to Project Explorer</h1>
+                <p>Project Explorer is a repository for final year projects across all departments at your institution. You can submit your project and search projects submitted by others to learn from.</p>
+                <a href="register.html"  class="btn btn-primary">Get Started</a>
+                <a href="login.html" class="btn btn-secondary">Login</a>
+            </div>
+
+            <div class="project-list project-list1">
+             <section class="card card1">
+                 <h4 class="card-title">Project title</h4>
+                 <p class="card-subtitle">Author 1, Author 2</p>
+                     <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ad consectetur exercitationem dicta veniam quia doloremque. </p>
+                     <p class="tags">#html #css #javascript</p>
+             </section>
+
+             <section class="card card1">
+                <h4 class="card-title">Project title</h4>
+                <p class="card-subtitle">Author 1, Author 2</p>
+                     <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ad consectetur exercitationem dicta veniam quia doloremque. </p>
+                     <p class="tags">#html #css #javascript</p>
+            </section>
+
+            <section class="card card1">
+                <h4 class="card-title">Project title</h4>
+                <p class="card-subtitle">Author 1, Author 2</p>
+                   <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ad consectetur exercitationem dicta veniam quia doloremque. </p>
+                   <p class="tags">#html #css #javascript</p>
+            </section>
+
+            <section class="card card1">
+                <h4 class="card-title">Project title</h4>
+                <p class="card-subtitle">Author 1, Author 2</p>
+                   <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ad consectetur exercitationem dicta veniam quia doloremque. </p>
+                   <p class="tags">#html #css #javascript</p>
+            </section>
+        </div>
+        </main>
+        <footer>
+            <p>Project Explorer 2020 - EdConnect </p>
+        </footer>
+    </body>
+</html>

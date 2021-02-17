@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Edit-Project</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .card{
+                padding: 10px 10px;
+            }
+            .container{
+                margin-bottom: 30px;
+                background-color: rgb(241, 239, 239);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Project Explorer</h1>
+            <form action="" class="form-inline" name="searchForm">
+                <input type="search" placeholder="Search Projects" class="form-control">
+                <input type="submit" value="Search" class="btn btn-outline-light">
+            </form>
+            <nav class="navbar">
+            <a href="createproject.html" class="header-links">Submit</a>
+        <div class="right">
+            <a href="register.html" class="header-links">Sign up</a>
+            <a href="login.html"  class="header-links">Login</a>
+        </div>
+        </nav>
+        </header>
+        <main>
+            <h3>Project 1</h3>
+            <section class="container p-3">
+                <div class="row">
+                    <div class="col">Created By</div>
+                    <div class="col">Date Created</div>
+                    <div class="col">last Updated</div>
+                    <div class="col">
+                        <button class="btn btn-primary d-flex-justify-content-end"><a href="viewproject.html"  style="color: white;">View Project</a></button>
+                        </div>
+                </div>
+                <div class="row" style="font-weight: bold;">
+                    <div class="col">Ade Chris</div>
+                    <div class="col">2020-08-30</div>
+                    <div class="col">2020-08-30</div>
+                    <div class="col"></div>
+                    </div>
+            </section>
+
+            <section>
+               <div class="row" style="margin-bottom: 10px;">
+                   <div class="col"><h5><strong> Project</strong></h5><hr></div>
+                   <div class="col"><h5><strong> Project Files</strong></h5><hr></div>
+               </div>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                        <div class="form-group">
+                            <label for="name">Project name</label>
+                            <input type="text" name="name" placeholder="Project 1" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group">
+                            <input type="file" class="form-control">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="abstract">Project abstract</label>
+                            <textarea name="abstract" id="" cols="40" rows="6" placeholder="Project 1 is a very interesting project." class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="authors">Author(s)</label>
+                            <input type="text" name="authors" class="form-control" placeholder="Ade Chris">
+                        </div>
+                        <div class="form-group">
+                            <label for="tags">Tag(s)</label>
+                            <input type="text" name="tags" class="form-control" placeholder="#web">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Save" class="btn btn-primary">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="background-color: rgb(223, 221, 221);">
+                            <h6 class="class-header"><strong>Project Files</strong> </h6>
+                        </div>
+                        <div class="card" style="text-align: center;">
+                            <p>No file uploaded yet</p>
+                        </div>
+                    </div>
+                </div>
+
+                    </form>
+            </section>
+        </main>
+        <footer>
+            <p>Project Explorer 2020 - EdConnect </p>
+        </footer>
+    </body>
+</html>

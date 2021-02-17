@@ -1,0 +1,59 @@
+<!doctype html>
+     <html>
+            <head>
+                <title>Create-Project</title>
+                <link rel="stylesheet" href="bootstrap.min.css">
+                <link rel="stylesheet" href="styles.css">
+                <style>
+                    .form-group{
+                        width: 70%;
+                    }
+                </style>
+            </head>
+            <body>
+                <header>
+                    <h1>Project Explorer</h1>
+                    <form action="" class="form-inline" name="searchForm">
+                        <input type="search" placeholder="Search Projects" class="form-control">
+                        <input type="submit" value="Search" class="btn btn-outline-light">
+                    </form>
+                    <nav class="navbar">
+                        <div class="left">
+                    <a href="createproject.html" class="header-links">Submit</a>
+                </div>
+                <div class="right">
+                    <a href="register.html" class="header-links">Sign up</a>
+                    <a href="login.html"  class="header-links">Login</a>
+                </div>
+                </nav>
+                </header>
+        <main>
+            
+            <form class="mx-auto w-75">
+                <div class="form-group">
+                    <h2>Submit Project</h2>
+           <label for="name"> Project Name:</label>
+            <input type="text" name= "name" class="form-control" placeholder="Enter Project name">
+        </div>
+        <div class="form-group">
+           <label for="abstract"> Project Abstract:</label>
+            <textarea name="abstract" type="text" id="" cols="30" rows="5" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="authors">  Author(s): </label>
+            <input type="text" name="authors" class="form-control" placeholder="Enter Author names (separated by comma)">
+        </div>
+        <div class="form-group">
+           <label for="tags">Tag(s):</label>  
+            <input type="text" name="tags" class="form-control" placeholder="Use # to tag project with different topics (e.g #javaScript #Mongodb)">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Continue" class="btn btn-primary">
+        </div>
+            </form>
+        </main>
+        <footer>
+            <p>Project Explorer 2020 - EdConnect </p>
+        </footer>
+    </body>
+</html>

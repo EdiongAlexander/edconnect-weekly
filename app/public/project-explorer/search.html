@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search-Projects</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .form-label{
+                 background-color: rgb(216, 215, 215);
+                 padding: 5px; border: solid 1px silver;
+                 margin-left: 10px; height: 48px;
+                 border-radius: 5px 0  0 5px;
+            }
+            .project-list2{
+                display: flex;
+            }
+
+             .card2{
+                  flex-basis: 30%;
+                  padding: 10px;
+                  margin-right: 10px;
+            }
+            .card-title{
+                color: #007bff;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Project Explorer</h1>
+            <form action="" class="form-inline" name="searchForm">
+                <input type="search" placeholder="Search Projects" class="form-control">
+                <input type="submit" value="Search" class="btn btn-outline-light">
+            </form>
+            <nav class="navbar"> 
+                <div class="left">
+            <a href="createproject.html" class="header-links">Submit</a>
+        </div>
+        <div class="right">
+            <a href="register.html" class="header-links">Sign up</a>
+            <a href="login.html"  class="header-links">Login</a>
+        </div>
+        </nav>
+        </header>
+ <main>
+            <section id="searchForm" class="bg-light p-3">
+                <h3>Projects Gallery</h3>
+                <form action="" name="searchForm">
+                    <div class="form-group form-row">
+                    <input type="text" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags" class="form-control form-control-lg" style="width: 50%;">         
+                  <label for="searchType" class="form-label"> Search By:</label> 
+                    <select name="searchType" id="searchType" class="form-control form-control-lg" style="width: 30%;">
+                        <option value="Name">Name</option>
+                        <option value="Abstract">Abstract</option>
+                        <option value="Authors">Authors</option>
+                        <option value="Tags">Tags</option>
+                    </select>
+                    <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-lg btn-primary">
+                    </div>
+                </div>
+                </form>
+            </section>
+
+            <section id = 'searchResults'>
+                <p style="margin-top: 30px;"><strong>All Projects</strong>(0 results)</p>
+                <div class="project-list project-list2">
+                    <section class="card card2">
+                        <h4 class="card-title">Project title</h4>
+                        <p class="card-subtitle">Author 1, Author 2</p>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ad consectetur exercitationem dicta veniam quia doloremque. </p>
+                            <p class="tags">#html #css #javascript</p>
+                    </section>
+       
+                    <section class="card card2">
+                       <h4 class="card-title">Project title</h4>
+                       <p class="card-subtitle">Author 1, Author 2</p>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde ad consectetur exercitationem dicta veniam quia doloremque. </p>
+                            <p class="tags">#html #css #javascript</p>
+                   </section>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Project Explorer 2020 - EdConnect </p>
+        </footer>
+    </body>
+</html>
