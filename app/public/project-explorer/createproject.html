@@ -74,7 +74,7 @@ footer{
                     <h1>Project Explorer</h1>
                     <form action="" class="form-inline" name="searchForm">
                         <input type="search" placeholder="Search Projects" class="form-control">
-                        <input type="submit" value="Search" class="btn btn-outline-light">
+                        <button class="btn btn-outline-light">Search</button>
                     </form>
                     <nav class="navbar">
                         <div class="left">
@@ -96,15 +96,15 @@ footer{
         </div>
         <div class="form-group">
            <label for="abstract"> Project Abstract:</label>
-            <textarea name="abstract" type="text" id="" cols="30" rows="5" class="form-control"></textarea>
+            <textarea class="form-control" name="abstract" type="text" id="" cols="30" rows="5"></textarea>
         </div>
         <div class="form-group">
           <label for="authors">  Author(s): </label>
-            <input type="text" name="authors" class="form-control" placeholder="Enter Author names (separated by comma)">
+            <input type="text" class="form-control"  name="authors" placeholder="Enter Author names (separated by comma)">
         </div>
         <div class="form-group">
            <label for="tags">Tag(s):</label>  
-            <input type="text" name="tags" class="form-control" placeholder="Use # to tag project with different topics (e.g #javaScript #Mongodb)">
+            <input type="text" class="form-control" name="tags" placeholder="Use # to tag project with different topics (e.g #javaScript #Mongodb)">
         </div>
         <div class="form-group">
             <input type="submit" value="Continue" class="btn btn-primary">
@@ -112,7 +112,7 @@ footer{
             </form>
         </main>
         <footer>
-            <p>Project Explorer 2020 - EdConnect </p>
+            <p>Project Explorer 2020 - <strong>EdConnect </strong></p>
         </footer>
     </body>
 </html>

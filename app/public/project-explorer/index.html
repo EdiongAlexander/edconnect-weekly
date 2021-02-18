@@ -4,14 +4,6 @@
         <title>Project-Index</title>
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <style>
- .jumbotron{
-    background-color: rgb(207, 204, 204);
-}
-
-.project-list1{
-    display: flex;
-    justify-content: space-between;
-}
 
 .card1{
     flex-basis: 23%;
@@ -68,11 +60,15 @@ main{
 
 a{
     margin-left: 10px;
+    color: white;
 }
 
+a:hover, a:active, a:visited{
+    color: white;
+} 
 
 .tags{
-    color: #007bff;  
+    color: #007bff; 
 }
 
 footer{
@@ -89,7 +85,7 @@ footer{
             <h1>Project Explorer</h1>
             <form action="" class="form-inline" name="searchForm">
                 <input type="search" placeholder="Search Projects" class="form-control">
-                <input type="submit" value="Search" class="btn btn-outline-light">
+                <button class="btn btn-outline-light">Search</button>
             </form>
             <nav class="navbar">
                 <div>
@@ -102,14 +98,14 @@ footer{
         </nav>
         </header>
         <main>
-            <div class="jumbotron">
+            <section class="jumbotron">
                 <h1>Welcome to Project Explorer</h1>
                 <p>Project Explorer is a repository for final year projects across all departments at your institution. You can submit your project and search projects submitted by others to learn from.</p>
-                <a href="register.html"  class="btn btn-primary">Get Started</a>
-                <a href="login.html" class="btn btn-secondary">Login</a>
-            </div>
+               <button class="btn btn-primary"><a href="register.html">Get Started</a></button>
+               <button class="btn btn-secondary"><a href="login.html">Login</a></button> 
+            </section>
 
-            <div class="project-list project-list1">
+            <div class="project-list" style="display: flex; justify-content: space-between;">
              <section class="card card1">
                  <h4 class="card-title">Project title</h4>
                  <p class="card-subtitle">Author 1, Author 2</p>
@@ -140,7 +136,7 @@ footer{
         </div>
         </main>
         <footer>
-            <p>Project Explorer 2020 - EdConnect </p>
+            <p>Project Explorer 2020 - <strong>Edconnect</strong></p>
         </footer>
     </body>
 </html>
