@@ -202,10 +202,7 @@ if (window.location.href.includes("login.html")) {
 
 
 //create project
-console.log("loser")
 if (window.location.href.includes("createproject.html")) {
-    console.log("wewe")
-  //  window.onload = function () {
         //check if cookie id exist
         let lookupCookie = document.cookie.split(";").some((item) => item.trim().startsWith('uid='));
         if (!lookupCookie) {
@@ -234,8 +231,7 @@ if (window.location.href.includes("createproject.html")) {
                 .then(result => {
                     console.log(result.data)
                     if (result.status === "ok") {
-                        console.log("hi")
-                       // window.location.href = "index.html"
+                       window.location.href = "index.html"
                     }
                     else if (result.status !== "ok") {
                         CPAlert.style.display = "block"
@@ -248,7 +244,7 @@ if (window.location.href.includes("createproject.html")) {
                 })
         }
         createProjectForm.addEventListener("submit", transferPost)
-   // }
+
 }
 
 
